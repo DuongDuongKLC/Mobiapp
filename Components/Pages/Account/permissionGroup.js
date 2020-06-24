@@ -19,21 +19,6 @@ export default class PermissionGroup extends Component {
     render(){
         return(
             <ScrollView>
-                 <Header style={[Colors.orange]}>
-                    <Left>
-                        <Button transparent>
-                            <Icon name='arrow-back' />
-                        </Button>
-                    </Left>
-                    <Body>
-                        <Title> Permission Group </Title>
-                    </Body>
-                    <Right>
-                        <Button transparent>
-                            <Icon name='menu'/>
-                        </Button>
-                    </Right>
-                </Header>
                 <Content>
                 <List>
                     <ListItem itemDivider>

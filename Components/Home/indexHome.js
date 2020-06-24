@@ -4,26 +4,30 @@ import Customer from '../Pages/Account/customer';
 import Administration from '../Pages/Account/administration';
 import Group from '../Pages/Account/group';
 import PermissionGroup from '../Pages/Account/permissionGroup';
-import { NativeRouter, Route, Link } from "react-router-native";
-import {View, Text, Image, ScrollView, TextInput} from 'react-native';
+import ControllerLink from '../Pages/Account/controllerLink';
+import Plink from '../Pages/Account/link'
+import { NativeRouter, Route, Link} from "react-router-native";
+import {View, Text, ScrollView} from 'react-native';
 
-export default class IndexHome extends Component {
-    render(){
-        const Home = () => <Text>Home</Text>;
-        const About = () => <Text>About</Text>;
+const Management = () => <Account_Management />;
+const Admin = () => <Administration />;
+const Cus = () => <Customer />;
+const Gp = () => <Group />;
+const PermissionGp = () => <PermissionGroup />;
+const Plk =() => <Plink />
+export const IndexHome = () => {
 
-        return(
-            <Account_Management />
-            // <NativeRouter>
-            //     <Link to="/" underlayColor="#f0f4f7">
-            //         <Text>Home</Text>
-            //     </Link>
-            //     <Link to="/about"underlayColor="#f0f4f7">
-            //         <Text>About</Text>
-            //     </Link>
-            //     <Route exact path="/" component={Home} />
-            //     <Route path="/about" component={About} />
-            // </NativeRouter>
-        )
-    }
+    return(
+        <ScrollView>
+            <NativeRouter>
+                <ControllerLink />
+                <Route exact path="/" component={Management} />
+                <Route path="/menu" component={Plk}></Route>
+                <Route path="/q-tri" component={Admin} />
+                <Route path="/k-hang" component={Cus} />
+                <Route path="/group" component={Gp} />
+                <Route path="/q-group" component={PermissionGp}/>
+            </NativeRouter>
+        </ScrollView>
+    )
 }

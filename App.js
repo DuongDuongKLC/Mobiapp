@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, Image, ScrollView, TextInput} from 'react-native';
 import {Height,Width,HeightCalc, WidthCalc,BoderColor,BoderWidth,Colors,Flex,Pos
 } from './Styles/Style';
-import IndexHome from './Components/Home/indexHome';
+import {IndexHome} from './Components/Home/indexHome';
 import Account_Management from './Components/Pages/Account/accountManagement'
 
 const App: () => React$Node = () => {

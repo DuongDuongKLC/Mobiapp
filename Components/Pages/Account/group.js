@@ -20,21 +20,6 @@ export default class Group extends Component {
     render(){
         return(
             <ScrollView>
-                 <Header style={[Colors.orange]}>
-                    <Left>
-                        <Button transparent>
-                            <Icon name='arrow-back' />
-                        </Button>
-                    </Left>
-                    <Body>
-                        <Title> Group </Title>
-                    </Body>
-                    <Right>
-                        <Button transparent>
-                            <Icon name='menu'/>
-                        </Button>
-                    </Right>
-                </Header>
                 <Content>
                 <List>
                     <ListItem itemDivider>

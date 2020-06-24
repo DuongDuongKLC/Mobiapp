@@ -20,45 +20,6 @@ export default class Account_Management extends Component {
     render(){
         return(
             <ScrollView>
-            <View style={[Colors.orange , Flex.f1, Flex.flexDirRow, Height.h5, Flex.jusContentEnd]}>
-                <View style={[Flex.f1, Flex.flexDirRow, Flex.jusContentCenter, Flex.aliSelfCenter, Width.w5]}>
-                    <Button transparent>
-                        <Icon name='arrow-back' />
-                    </Button>
-                </View>
-                <View style={[Width.w20, Flex.f1, Flex.flexDirRow, Flex.jusContentCenter, Flex.aliSelfCenter]}>
-                    <Title> Account Management </Title>
-                </View>
-                <View style={[Width.w15]}>
-                    <View style={[Height.h30, Width.w20, Pos.pos_a, Pos.r1, Zindex.z10]}>
-                        <MenuProvider>
-                            <Menu>
-                            <MenuTrigger style={[Height.h5]} >
-                                <View style={[Height.h5, Flex.f1, Flex.flexDirRow, Font.fwBold]}>
-                                    <Text style={[Pos.pos_a, Pos.r4, Pos.t1]}> Menu </Text>
-                                    <Icon style={[Pos.pos_a, Pos.r1, Pos.t1]} name='menu' />
-                                </View>
-                            </MenuTrigger>
-                            <MenuOptions style={[Pos.pos_a, Pos.t9 , Colors.black, Pos.r1, Height.h20, Width.w20]} >
-                                <MenuOption value={"Login"} style={[Height.h5]}>
-                                <Text style={[TextColor.white, Pos.pos_a, Pos.r2, Pos.t2]}> Login</Text>
-                                </MenuOption>
-                                <MenuOption value={"Register"} style={[Height.h5]}>
-                                <Text style={[TextColor.white, Pos.pos_a, Pos.r2, Pos.t2]} > Register</Text>
-                                </MenuOption>
-                                <MenuOption value={"Download"} style={[Height.h5]}>
-                                <Text style={[TextColor.white, Pos.pos_a, Pos.r2, Pos.t2]}> Download</Text>
-                                </MenuOption>
-                                <MenuOption value={"Logout"} style={[Height.h5]}>
-                                <Text style={[TextColor.white, Pos.pos_a, Pos.r2, Pos.t2]}> Logout</Text>
-                                </MenuOption>
-                            </MenuOptions>
-
-                            </Menu>
-                        </MenuProvider>
-                    </View>
-                </View>
-            </View>
             <Content>
                 <List>
                     <ListItem itemDivider style={[Pos.pos_r, Zindex.z1]}>
